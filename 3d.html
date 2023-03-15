@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Generator</title>
+    <link rel="stylesheet" href="/3d.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="aSide">
+
+            <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <model-viewer id="change1" src="/assets/final_house/scene.gltf" style = "z-index: 20;" alt="VR Headset" auto-rotate camera-controls ar >
+            </model-viewer>
+            <model-viewer id="change2" src="/Assets/hw_4_cyberpunk_sci-fi_building/scene.gltf" style = "z-index: 20;" alt="VR Headset" auto-rotate camera-controls ar >
+            </model-viewer>
+            <model-viewer id="change3" src="/Assets/minimalistic_modern_bedroom/scene.gltf" style = "z-index: 20;" alt="VR Headset" auto-rotate camera-controls ar >
+            </model-viewer>
+            
+            
+            
+        </div>
+
+        <!-- Content container -->
+        <!-- This is for holding some brief description about the 3D object -->
+        <div id="content">
+           <h2>Generate Free 3D Models</h2>
+            <a class="button" id="control1">Example 1</a>
+            <a class="button" id="control2">Example 2</a>
+            <a class="button" id="control3">Example 3</a>
+           
+            
+        </div>
+
+        <!-- Social media icons -->
+        <!-- This is for holding some company's social media icons and related links -->
+        
+    </div>
+    <script src="/3d.js"></script>
+</body>
+</html>
